@@ -6,7 +6,10 @@ buildscript {
 
     repositories {
         google()
-        jcenter()
+        maven() { url 'https://plugins.gradle.org/m2/' }
+        maven() { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
+        maven() { url 'https://dl.bintray.com/jetbrains/kotlin-native-dependnecies' }
+        // jcenter()
     }
 
     dependencies {
@@ -55,7 +58,7 @@ repositories {
     }
     maven { url 'https://jitpack.io' }
     google()
-    jcenter()
+    // jcenter()
 }
 
 dependencies {
